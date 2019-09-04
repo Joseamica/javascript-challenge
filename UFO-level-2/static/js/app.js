@@ -9,10 +9,15 @@ var ufoTable = d3.select("thead")
 
 var list = []
 
-
-
-
-// YOUR CODE HERE!
+for(var i in data){
+    var key = i;
+    var val = data[i];
+    for(var j in val){
+        var sub_key = j;
+        var sub_val = val[j];
+        console.log(sub_key);
+    }
+}// YOUR CODE HERE!
 button.on("click", function(i){
 	var inputElement = d3.select("#datetime");
 	var inputValue = inputElement.property("value");
